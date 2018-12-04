@@ -65,7 +65,7 @@ def firstCycle1(freqs, seen, current):
     return firstCycle1(freqs, seen, current)
 
 #Pringting solution using naive algorithm
-print("Using naive algorithm")
+print("Using simple algorithm")
 start = time.time()
 print(firstCycle1(freqs,set(),0))
 print("{} seconds".format(time.time() - start))
