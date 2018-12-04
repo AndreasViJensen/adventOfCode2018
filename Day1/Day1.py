@@ -6,14 +6,6 @@ freqStrings = input.splitlines()
 
 freqs = [int(s) for s in freqStrings]
 
-#Tests:
-t1 = [+1,-1] #0
-t2 = [+3,+3,+4,-2,-4] # first reaches 10 twice.
-t3 = [-6, +3, +8, +5, -6] # first reaches 5 twice.
-t4 = [+7, +7, -2, -7, -4] # first reaches 14 twice.
-t5 = [+1,-2,+3,+1] #2
-t6 = [+7, +3, +1, -13] # first reaches 11
-
 ##Part 1:
 ## Solution to first subquestion, that returns array for the sake of dynamic programming in part 2:
 def sumOfFrequencies(freqs):
@@ -80,6 +72,15 @@ print("{} seconds".format(time.time() - start))
 
 
 ## Test cases:
+
+# Tests:
+# t1 = [+1,-1] #0
+# t2 = [+3,+3,+4,-2,-4] # first reaches 10 twice.
+# t3 = [-6, +3, +8, +5, -6] # first reaches 5 twice.
+# t4 = [+7, +7, -2, -7, -4] # first reaches 14 twice.
+# t5 = [+1,-2,+3,+1] #2
+# t6 = [+7, +3, +1, -13] # first reaches 11
+
 # print("t1 (should be 0) : " + str(firstCycle2(t1)))
 # print("t2 (should be 10) : " + str(firstCycle2(t2)))
 # print("t3 (should be 5) : " + str(firstCycle2(t3)))
