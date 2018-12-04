@@ -46,7 +46,7 @@ def firstCycle2(freqs):
 
 
 #Printing solution
-print("exercise solution:")
+print("exercise solution using firstCycle2:")
 start = time.time()
 print(firstCycle2(freqs))
 print("{} seconds".format(time.time() - start))
@@ -65,7 +65,7 @@ def firstCycle1(freqs, seen, current):
     return firstCycle1(freqs, seen, current)
 
 #Pringting solution using naive algorithm
-print("Using simple algorithm")
+print("Using simple algorithm (firstCycle1)")
 start = time.time()
 print(firstCycle1(freqs,set(),0))
 print("{} seconds".format(time.time() - start))
